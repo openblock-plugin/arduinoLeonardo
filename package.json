@@ -1,0 +1,58 @@
+{
+  "name": "arduino-leonardo",
+  "version": "1.0.0",
+  "author": "ArthurZheng",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openblock-plugin/arduinoLeonardo.git"
+  },
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "dev": "npx openblock-registry-cli dev",
+    "build": "npx openblock-registry-cli build",
+    "build:obfuscate": "npx openblock-registry-cli build --obfuscate",
+    "publish": "npx openblock-registry-cli publish",
+    "publish:dry": "npx openblock-registry-cli publish --dry-run",
+    "validate": "npx openblock-registry-cli validate",
+    "i18n:update": "npx openblock-registry-cli i18n update",
+    "lint": "eslint . --ext .js --fix"
+  },
+  "openblock": {
+    "name": "Arduino Leonardo",
+    "deviceId": "arduinoLeonardo",
+    "manufactor": "arduino.cc",
+    "learnMore": "https://docs.arduino.cc/hardware/leonardo",
+    "type": "arduino",
+    "iconURL": "./assets/arduinoLeonardo.png",
+    "description": {
+      "formatMessage": {
+        "id": "arduinoLeonardo.description",
+        "default": "The classic Arduino board that can act as a mouse or keyboard."
+      }
+    },
+    "bluetoothRequired": false,
+    "serialportRequired": true,
+    "defaultBaudRate": "57600",
+    "internetConnectionRequired": false,
+    "launchPeripheralConnectionFlow": true,
+    "useAutoScan": false,
+    "connectionIconURL": "./assets/arduinoLeonardo-illustration.svg",
+    "connectionSmallIconURL": "./assets/arduinoLeonardo-small.svg",
+    "main": "./src/arduinoLeonardo.js",
+    "generator": "./src/generator.js",
+    "translations": "./src/translations.js",
+    "toolchains": "arduino-arduino-avr",
+    "programMode": ["upload"],
+    "tags": ["arduino"],
+    "helpLink": "https://wiki.openblock.cc/general-hardware-guidelines/boards/arduino-leonardo",
+    "libraries": "./libraries"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.3.0",
+    "eslint-config-scratch": "^5.0.0",
+    "husky": "^9.0.0"
+  }
+}
