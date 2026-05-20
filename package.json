@@ -1,6 +1,6 @@
 {
   "name": "arduino-leonardo",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "ArthurZheng",
   "license": "MIT",
   "repository": {
@@ -22,6 +22,9 @@
   "openblock": {
     "name": "Arduino Leonardo",
     "deviceId": "arduinoLeonardo",
+    "arch": [
+      "arduino-avr-usb"
+    ],
     "manufactor": "arduino.cc",
     "learnMore": "https://docs.arduino.cc/hardware/leonardo",
     "type": "arduino",
@@ -44,10 +47,112 @@
     "generator": "./src/generator.js",
     "translations": "./src/translations.js",
     "toolchains": "arduino-arduino-avr",
-    "programMode": ["upload"],
-    "tags": ["arduino"],
+    "programMode": [
+      "upload"
+    ],
+    "tags": [
+      "arduino"
+    ],
     "helpLink": "https://wiki.openblock.cc/general-hardware-guidelines/boards/arduino-leonardo",
-    "libraries": "./libraries"
+    "libraries": "./libraries",
+    "examples": [
+      {
+        "id": "blink",
+        "name": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.blink.name",
+            "default": "Blink"
+          }
+        },
+        "description": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.blink.description",
+            "default": "Make the on-board LED blink."
+          }
+        },
+        "file": "./examples/blink.ob"
+      },
+      {
+        "id": "button",
+        "name": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.button.name",
+            "default": "Button"
+          }
+        },
+        "description": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.button.description",
+            "default": "Light up the LED while a push button is pressed."
+          }
+        },
+        "file": "./examples/button.ob"
+      },
+      {
+        "id": "fade",
+        "name": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.fade.name",
+            "default": "Fade"
+          }
+        },
+        "description": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.fade.description",
+            "default": "Smoothly fade an LED in and out using PWM."
+          }
+        },
+        "file": "./examples/fade.ob"
+      },
+      {
+        "id": "knob",
+        "name": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.knob.name",
+            "default": "Knob"
+          }
+        },
+        "description": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.knob.description",
+            "default": "Control LED brightness with a potentiometer."
+          }
+        },
+        "file": "./examples/knob.ob"
+      },
+      {
+        "id": "servoSweep",
+        "name": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.servoSweep.name",
+            "default": "Servo Sweep"
+          }
+        },
+        "description": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.servoSweep.description",
+            "default": "Sweep a servo back and forth between 0 and 180 degrees."
+          }
+        },
+        "file": "./examples/servoSweep.ob"
+      },
+      {
+        "id": "serialMonitor",
+        "name": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.serialMonitor.name",
+            "default": "Serial Monitor"
+          }
+        },
+        "description": {
+          "formatMessage": {
+            "id": "arduinoLeonardo.examples.serialMonitor.description",
+            "default": "Print analog readings to the Serial Monitor every half second."
+          }
+        },
+        "file": "./examples/serialMonitor.ob"
+      }
+    ]
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

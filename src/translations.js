@@ -1,19 +1,83 @@
 /* eslint-disable quote-props */
 /* eslint-disable max-len */
+/**
+ * Translation file for this resouce.
+ *
+ * IMPORTANT:
+ * - The "en" (English) section is automatically generated from source files.
+ *   Do NOT modify the "en" section manually.
+ * - Other language sections (e.g., "zh-cn", "zh-tw", "ja", etc.) should be
+ *   manually translated by you.
+ * - When you run the extraction script again, only the "en" section will be
+ *   updated. Your manual translations in other languages will be preserved.
+ *
+ * Structure:
+ * - interface: translations for name/description (used by GUI formatMessage)
+ * - extensions: translations for extension blocks (used by VM formatMessage)
+ * - blocks: translations for Blockly blocks (used by Blockly.Msg)
+ */
 
 export default {
     'interface': {
         'en': {
-            'arduinoLeonardo.description': 'The classic Arduino board that can act as a mouse or keyboard.'
+            'arduinoLeonardo.description': 'The classic Arduino board that can act as a mouse or keyboard.',
+            'arduinoLeonardo.examples.blink.name': 'Blink',
+            'arduinoLeonardo.examples.blink.description': 'Make the on-board LED blink.',
+            'arduinoLeonardo.examples.button.name': 'Button',
+            'arduinoLeonardo.examples.button.description': 'Light up the LED while a push button is pressed.',
+            'arduinoLeonardo.examples.fade.name': 'Fade',
+            'arduinoLeonardo.examples.fade.description': 'Smoothly fade an LED in and out using PWM.',
+            'arduinoLeonardo.examples.knob.name': 'Knob',
+            'arduinoLeonardo.examples.knob.description': 'Control LED brightness with a potentiometer.',
+            'arduinoLeonardo.examples.servoSweep.name': 'Servo Sweep',
+            'arduinoLeonardo.examples.servoSweep.description': 'Sweep a servo back and forth between 0 and 180 degrees.',
+            'arduinoLeonardo.examples.serialMonitor.name': 'Serial Monitor',
+            'arduinoLeonardo.examples.serialMonitor.description': 'Print analog readings to the Serial Monitor every half second.'
         },
         'ru': {
-            'arduinoLeonardo.description': 'Классическая плата Arduino, которая может передавать данные в компьютер как мышь или клавиатура.'
+            'arduinoLeonardo.description': 'Классическая плата Arduino, которая может передавать данные в компьютер как мышь или клавиатура.',
+            'arduinoLeonardo.examples.blink.name': 'Мигание',
+            'arduinoLeonardo.examples.blink.description': 'Заставьте встроенный светодиод мигать.',
+            'arduinoLeonardo.examples.button.name': 'Кнопка',
+            'arduinoLeonardo.examples.button.description': 'Зажигайте светодиод, пока нажата кнопка.',
+            'arduinoLeonardo.examples.fade.name': 'Плавное затухание',
+            'arduinoLeonardo.examples.fade.description': 'Плавное затухание светодиода с помощью ШИМ.',
+            'arduinoLeonardo.examples.knob.name': 'Регулятор',
+            'arduinoLeonardo.examples.knob.description': 'Регулировка яркости светодиода с помощью потенциометра.',
+            'arduinoLeonardo.examples.servoSweep.name': 'Развертка серво',
+            'arduinoLeonardo.examples.servoSweep.description': 'Поворот серво вперед и назад между 0° и 180°.',
+            'arduinoLeonardo.examples.serialMonitor.name': 'Монитор порта',
+            'arduinoLeonardo.examples.serialMonitor.description': 'Печать аналоговых показаний в монитор порта каждые полсекунды.'
         },
         'zh-cn': {
-            'arduinoLeonardo.description': '经典的Arduino板，可以用作鼠标或键盘。'
+            'arduinoLeonardo.description': '经典的Arduino板，可以用作鼠标或键盘。',
+            'arduinoLeonardo.examples.blink.name': '闪烁',
+            'arduinoLeonardo.examples.blink.description': '让板载 LED 闪烁。',
+            'arduinoLeonardo.examples.button.name': '按键',
+            'arduinoLeonardo.examples.button.description': '按住按键时点亮 LED。',
+            'arduinoLeonardo.examples.fade.name': '呼吸灯',
+            'arduinoLeonardo.examples.fade.description': '用 PWM 让 LED 缓缓变亮再渐渐变暗。',
+            'arduinoLeonardo.examples.knob.name': '电位器调光',
+            'arduinoLeonardo.examples.knob.description': '用电位器调节 LED 的亮度。',
+            'arduinoLeonardo.examples.servoSweep.name': '舵机来回扫描',
+            'arduinoLeonardo.examples.servoSweep.description': '让舵机在 0° 到 180° 之间来回转动。',
+            'arduinoLeonardo.examples.serialMonitor.name': '串口监视器',
+            'arduinoLeonardo.examples.serialMonitor.description': '每半秒把模拟引脚的数值打印到串口监视器上。'
         },
         'zh-tw': {
-            'arduinoLeonardo.description': '經典的Arduino板，可以用作鼠標或鍵盤。'
+            'arduinoLeonardo.description': '經典的Arduino板，可以用作鼠標或鍵盤。',
+            'arduinoLeonardo.examples.blink.name': '閃爍',
+            'arduinoLeonardo.examples.blink.description': '讓板載 LED 閃爍。',
+            'arduinoLeonardo.examples.button.name': '按鍵',
+            'arduinoLeonardo.examples.button.description': '按住按鍵時點亮 LED。',
+            'arduinoLeonardo.examples.fade.name': '呼吸燈',
+            'arduinoLeonardo.examples.fade.description': '用 PWM 讓 LED 緩緩變亮再漸漸變暗。',
+            'arduinoLeonardo.examples.knob.name': '電位器調光',
+            'arduinoLeonardo.examples.knob.description': '用電位器調節 LED 的亮度。',
+            'arduinoLeonardo.examples.servoSweep.name': '舵機來回掃描',
+            'arduinoLeonardo.examples.servoSweep.description': '讓舵機在 0° 到 180° 之間來回轉動。',
+            'arduinoLeonardo.examples.serialMonitor.name': '串口監視器',
+            'arduinoLeonardo.examples.serialMonitor.description': '每半秒把類比引腳的數值印出到串口監視器上。'
         }
     },
     'extensions': {
